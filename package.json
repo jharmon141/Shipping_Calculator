@@ -20,6 +20,7 @@
     "graphql-tag": "^2.6.1",
     "vue": "^2.5.2",
     "vue-apollo": "^3.0.0-alpha.3",
+    "vue-flag-icon": "^1.0.6",
     "vuetify": "^0.17.6"
   },
   "devDependencies": {

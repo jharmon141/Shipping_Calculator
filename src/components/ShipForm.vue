@@ -12,6 +12,18 @@
               label="Country"
               v-on:input="handleUpdateValue"
               >
+              <template slot="selection" slot-scope="data">
+                <v-list-title-content>
+                  <flag :iso="data.item.countryCode.toLowerCase()" />
+                  {{ data.item.countryName }}
+                </v-list-title-content>
+              </template>
+              <template slot="item" slot-scope="data">
+                <v-list-title-content>
+                  <flag :iso="data.item.countryCode.toLowerCase()" />
+                  {{ data.item.countryName }}
+                </v-list-title-content>
+              </template>
             </v-select>
           </v-flex>
         </v-layout>

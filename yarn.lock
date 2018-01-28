@@ -2650,6 +2650,10 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
+flag-icon-css@^2.8.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/flag-icon-css/-/flag-icon-css-2.9.0.tgz#5793c15244e3c63ae36631478a758a3fc29c86be"
+
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
@@ -6609,6 +6613,12 @@ vue-apollo@^3.0.0-alpha.3:
     lodash.debounce "^4.0.8"
     lodash.omit "^4.5.0"
     lodash.throttle "^4.1.1"
+
+vue-flag-icon@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/vue-flag-icon/-/vue-flag-icon-1.0.6.tgz#0304fdfeebd982a6bf985c633c346ff3c6d2f9d7"
+  dependencies:
+    flag-icon-css "^2.8.0"
 
 vue-hot-reload-api@^2.2.0:
   version "2.2.4"
