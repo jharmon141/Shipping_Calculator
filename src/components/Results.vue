@@ -84,7 +84,8 @@ export default {
 
   filters: {
     yenToUSD(val) {
-      return (val*0.0092).toFixed(2)
+      //find conversion api
+      return (val*0.0092).toFixed(2) || val
     }
   },
 
