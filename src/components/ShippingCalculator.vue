@@ -138,7 +138,7 @@ export default {
       this.height = height
     },
 
-    resetForm(){
+    resetForm() {
       this.country = null,
         this.submitted = false,
         this.country = null,
