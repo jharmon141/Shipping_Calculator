@@ -11,11 +11,7 @@ export default {
   name: 'App',
   components: {
     ShippingCalculator
-  },
-
-  data: () => ({
-    title: 'Shipping Calculator'
-  }),
+  }
 
 }
 </script>
