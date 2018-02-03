@@ -140,16 +140,16 @@ export default {
 
     resetForm() {
       this.country = null,
-        this.submitted = false,
-        this.country = null,
-        this.weight = null,
-        this.length = null,
-        this.width = null,
-        this.height = null,
-        this.loading = 0,
-        this.results = null,
-        this.error = false,
-        this.errorMessage = ''
+      this.submitted = false,
+      this.country = null,
+      this.weight = null,
+      this.length = null,
+      this.width = null,
+      this.height = null,
+      this.loading = 0,
+      this.results = null,
+      this.error = false,
+      this.errorMessage = ''
     }
   },
 }

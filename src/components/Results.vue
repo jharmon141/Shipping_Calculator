@@ -62,12 +62,7 @@ export default {
   props: ['results', 'country', 'weight', 'length', 'width', 'height'],
   data: () => ({
     headers: [
-      {
-        text: 'Rate USD',
-        align: 'left',
-        sortable: true,
-        value: 'name'
-      },
+      { text: 'Rate USD', align: 'left', sortable: true, value: 'name' },
       { text: 'Shipping Method', value: 'method' },
       { text: 'Region', value: 'regionCode' },
       { text: 'Max Length (cm)', value: 'maxLength' },

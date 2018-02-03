@@ -12,9 +12,5 @@ export default {
   components: {
     ShippingCalculator
   }
-
 }
 </script>
-
-<style>
-</style>
