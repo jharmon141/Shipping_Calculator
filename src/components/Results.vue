@@ -4,9 +4,7 @@
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-btn
-            v-on:click="handleToggleResults"
-            color="success">
+          <v-btn @click="backToForm" color="success">
             <v-icon>arrow_back</v-icon>
             Back
           </v-btn>
@@ -37,7 +35,7 @@
       <v-layout row wrap>
         <v-flex xs12>
           <v-data-table
-            v-bind:headers="headers"
+            :headers="headers"
             :items="results"
             hide-actions
             >
@@ -51,6 +49,7 @@
           </v-data-table>
         </v-flex>
       </v-layout>
+
     </v-container>
   </div>
 </template>
@@ -71,15 +70,14 @@ export default {
   }),
 
   methods: {
-    handleToggleResults(){
-      this.$emit('toggleSubmitted')
-      this.$emit('resetForm')
+    backToForm(){
+      this.$emit('returnToForm')
     }
   },
 
   filters: {
     yenToUSD(val) {
-      //find conversion api
+      //insert conversion api here
       return (val*0.0092).toFixed(2) || val
     }
   },

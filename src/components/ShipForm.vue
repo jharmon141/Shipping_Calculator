@@ -121,11 +121,11 @@ export default {
 
   methods: {
     handleUpdateValue() {
-      this.$emit('updateFormValues', this.country, this.weight, this.length, this.width, this.height)
+      this.$emit('update', this.country, this.weight, this.length, this.width, this.height)
     },
 
     handleSubmitForm(){
-      this.$emit('submitShippingInfo')
+      this.$emit('submit')
     },
   },
 

@@ -6,17 +6,16 @@
     </Loading>
 
     <ShipForm 
-      v-else-if="!submitted" class="ship-form"
-      v-on:updateFormValues="updateFormValues"
-      v-on:submitShippingInfo="submitShippingInfo"
-      v-bind="{allCountries, error, errorMessage}">
+      v-else-if="!submitted"
+      @update="updateFormValues"
+      @submit="submitShippingInfo"
+      v-bind="{ allCountries, error, errorMessage }">
     </ShipForm>
 
     <Results
-      v-else class="results"
-      v-on:toggleSubmitted="toggleSubmitted"
-      v-on:resetForm="resetForm"
-      v-bind="{results, country, weight, length, width, height}">
+      v-else 
+      @returnToForm="toggleSubmitted(); resetForm()"
+      v-bind="{ results, country, weight, length, width, height }">
     </Results>
 
   </div>
