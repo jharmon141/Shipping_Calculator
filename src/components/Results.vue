@@ -4,7 +4,7 @@
 
       <v-layout row wrap>
         <v-flex xs12>
-          <v-btn @click="backToForm" color="success">
+          <v-btn v-on:click="backToForm" color="success">
             <v-icon>arrow_back</v-icon>
             Back
           </v-btn>

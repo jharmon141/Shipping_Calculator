@@ -7,14 +7,14 @@
 
     <ShipForm 
       v-else-if="!submitted"
-      @update="updateFormValues"
-      @submit="submitShippingInfo"
+      v-on:update="updateFormValues"
+      v-on:submit="submitShippingInfo"
       v-bind="{ allCountries, error, errorMessage }">
     </ShipForm>
 
     <Results
       v-else 
-      @returnToForm="toggleSubmitted(); resetForm()"
+      v-on:returnToForm="toggleSubmitted(); resetForm()"
       v-bind="{ results, country, weight, length, width, height }">
     </Results>
 
